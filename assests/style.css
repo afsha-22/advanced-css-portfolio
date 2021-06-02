@@ -1,3 +1,7 @@
+:root {
+  --lightblue: rgb(135, 185, 185);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -11,9 +15,8 @@ header {
 
 h1 {
   display: inline;
-  background-color: rgb(135, 185, 185);
+  background-color: var(--lightblue);
   color: rgb(54, 47, 47);
-  box-sizing: border-box;
 }
 
 .navigation {
@@ -23,19 +26,24 @@ h1 {
 ul {
   list-style-type: none;
   float: right;
+  padding: 4px;
 }
 
 li {
   text-decoration: underline;
   display: inline;
-  padding: 2px;
-  color: rgb(135, 185, 185);
+  padding: 4px;
+  color: var(--lightblue);
 }
 
 /* .section {
   max-width: 1440px;
   margin: 0 auto;
 } */
+
+main {
+  background-color: whitesmoke;
+}
 
 .banner {
   position: relative;
@@ -51,7 +59,7 @@ li {
   position: absolute;
   bottom: 10px;
   right: 20px;
-  background-color: rgb(135, 185, 185);
+  background-color: var(--lightblue);
   font-size: 30px;
   padding: 8px;
 }
@@ -75,9 +83,45 @@ h2 {
   padding: 30px;
 }
 
+.cont {
+  position: relative;
+}
+
+.imgtext {
+  position: absolute;
+  bottom: 10px;
+  /* left: 10px; */
+  background-color: var(--lightblue);
+  color: black;
+  line-height: 2px;
+  padding: 0 10px 0 10px;
+}
+
+.img1 {
+  width: 600px;
+  height: 300px;
+  opacity: 0.5;
+  /* border: 2px solid teal; */
+}
+
 div img {
   width: 300px;
-  height: 200px;
+  height: 150px;
+  border: 2px solid var(--lightblue);
+  opacity: 0.5;
+}
+
+.img1:hover {
+  opacity: 1;
+}
+
+div img:hover {
+  opacity: 1;
+}
+
+.sec1 .li {
+  margin: 10px;
+  padding: 10px;
 }
 
 .ulli {
