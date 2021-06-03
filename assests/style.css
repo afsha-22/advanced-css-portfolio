@@ -7,7 +7,7 @@
 }
 
 header {
-  height: 60px;
+  height: 260px;
   background-color: rgb(54, 47, 47);
   width: 100%;
   color: white;
@@ -17,6 +17,9 @@ h1 {
   display: inline;
   background-color: var(--lightblue);
   color: rgb(54, 47, 47);
+  font-size: 40px;
+  padding-left: 30px;
+  padding-right: 5px;
 }
 
 .navigation {
@@ -27,12 +30,17 @@ ul {
   list-style-type: none;
   float: right;
   padding: 4px;
+  font-size: 18px;
 }
 
 li {
   text-decoration: underline;
   display: inline;
   padding: 4px;
+  color: var(--lightblue);
+}
+
+a {
   color: var(--lightblue);
 }
 
@@ -62,6 +70,7 @@ main {
   background-color: var(--lightblue);
   font-size: 30px;
   padding: 8px;
+  margin: 0 4px 5px 0;
 }
 /* Below thissdfsdfffffffffffffffffffffffffffff */
 .container1 {
@@ -85,6 +94,7 @@ h2 {
 
 .cont {
   position: relative;
+  display: flex;
 }
 
 .imgtext {
@@ -95,27 +105,28 @@ h2 {
   color: black;
   line-height: 2px;
   padding: 0 10px 0 10px;
+  margin-bottom: 5px;
 }
 
 .img1 {
-  width: 600px;
+  width: 100%;
   height: 300px;
   opacity: 0.5;
   /* border: 2px solid teal; */
 }
 
-div img {
-  width: 300px;
+main div img {
+  width: 50%;
   height: 150px;
-  border: 2px solid var(--lightblue);
+  border: 4px solid var(--lightblue);
   opacity: 0.5;
 }
 
-.img1:hover {
+main .img1:hover {
   opacity: 1;
 }
 
-div img:hover {
+main div img:hover {
   opacity: 1;
 }
 
@@ -126,4 +137,5 @@ div img:hover {
 
 .ulli {
   padding: 40px;
+  /* font-size: 18px; */
 }
