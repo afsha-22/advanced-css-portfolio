@@ -5,7 +5,7 @@
 Link: https://afsha-22.github.io/advanced-css-portfolio/
 
 The below mockup video shows the Advanced CSS Portfolio's appearance that has been created from scratch.
-![Afsha's Advanced CSS Portfolio](./assets/Images/MockUp.mov)
+![Afsha's Advanced CSS Portfolio](./assets/Images/Mockup.png)
 
 > **Note**: This layout contains responsive design for resolution with width 768px and 992px, so you may notice that some of the elements don't look like the mock-up at smaller resolution.
 
