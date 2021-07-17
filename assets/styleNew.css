@@ -4,16 +4,16 @@
   height: 200px;
 }
 
-.avatar {
+/* .avatar {
   position: absolute;
   width: 120px;
   height: 120px;
   border-radius: 50%;
   top: 90px;
   right: 30px;
-}
+} */
 
-.subtitle {
+/* .subtitle {
   position: absolute;
   top: 210px;
   right: 0px;
@@ -21,7 +21,7 @@
   font-size: xx-large;
   padding: 8px;
   margin: 0 4px 5px 0;
-}
+} */
 
 .imgtext {
   position: absolute;
@@ -30,3 +30,9 @@
   padding: 0 10px;
   margin-bottom: 5px;
 }
+
+/* body {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+} */

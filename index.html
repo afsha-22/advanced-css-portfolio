@@ -9,7 +9,7 @@
     <title>Afsha's CSS Portfolio</title>
 </head>
 
-<body>
+<body style="max-width:1200px;text-align:center;margin-left:auto;margin-right:auto;">
     <a id="top"></a>
     <header>
         <nav class="navbar navbar-light bg-secondary text-white">
@@ -24,9 +24,13 @@
             </div>
         </nav>
         <div class="banner">
-            <img src="assets/Images/banner.jpg" alt="Banner" class="banner1"/>
-            <img src="assets/Images/profile1.jpeg" alt="Avatar" class="avatar">
-            <p class="subtitle">A budding developer</p>
+            <div class="position-relative">
+                <img src="assets/Images/banner.jpg" alt="Banner" class="banner1"/>
+                <div class="position-absolute bottom-0 end-0">
+                    <img src="assets/Images/profile1.jpeg" alt="Avatar" class="img-thumbnail rounded-circle">
+                    <p class="fs-5 fw-bold">A budding developer</p>
+                </div>
+            </div>
         </div>
     </header>
     
@@ -34,7 +38,7 @@
 
         <div class="p-4 container-fluid">
             <div id="about-me" class="p-2 row">
-                <h2 class="col-3 text-center align-self-center">About Me</h2>
+                <h2 class="col-3 text-center align-self-center fs-4">About Me</h2>
                 <div class="col-9 p-3 border-start border-3">
                     <p>I work as a Quality Analyst in a product company. My roles and responsibilities including both automation and manual testing. My day-to-day responsibility is to interact with different stake holders and gather information about the functionality and ensure we have quality injected in each stage of the development cycle.</p>
                     <p>My next goal is to finish Coding Bootcamp and apply the knowledge in my existing role and eventually move to a development role.</p>
@@ -42,13 +46,11 @@
             </div>
 
             <div id="work" class="p-2 row">
-                <h2 class="col-3 text-center align-self-center">Work</h2>
+                <h2 class="col-3 text-center align-self-center fs-4">Work</h2>
                 <div class="col-9 p-3 border-start border-3">
-                    <div class="row">
-                        <div class="row position-relative">
-                            <a href="#top">
-                                <img class="img-fluid" src="assets/Images/img1.png" alt="Image1" class="img1"/>
-                            </a>
+                    <div class="row row-cols-1">
+                        <div class="col-12 position-relative">
+                            <img class="img-fluid w-100" src="assets/Images/img1.png" alt="Image1" class="img1"/>
                             <div class="ps-4 ms-1 position-absolute bottom-0 start-0">
                                 <h4 class="text-light">Weather Dashboard</h3>
                                 <a href="https://afsha-22.github.io/weather-dashboard" target="_blank" class="text-light">GitHub Page</a><br>
@@ -56,51 +58,43 @@
                             </div>
                         </div>
 
-                        <div class="row">
-                            <div class="col-6 position-relative">
-                                <a href="#top">
-                                    <img class="img-fluid" src="assets/Images/img2.png" alt="Image2"/>
-                                </a>
+                        
+                            <div class="col-lg-6 col-12 position-relative">
+                                <img class="img-fluid w-100" src="assets/Images/img2.png" alt="Image2"/>
                                 <div class="ps-3 position-absolute bottom-0 start-0">
                                     <h4>Code Quiz</h3>
                                     <a href="https://afsha-22.github.io/code-quiz/index.html" target="_blank">GitHub Page</a><br>
                                     <a href="https://github.com/afsha-22/code-quiz" target="_blank">GitHub Reposatory</a>
                                 </div>
                             </div>
-                            <div class="col-6 position-relative">
-                                <a href="#top">
-                                    <img class="img-fluid" src="assets/Images/img3.png" alt="Image3"/>
-                                </a>
+                            <div class="col-lg-6 col-12 position-relative">
+                                <img class="img-fluid w-100" src="assets/Images/img3.png" alt="Image3"/>
                                 <div class="ps-3 position-absolute bottom-0 start-0">
                                     <h4>Password Generator</h3>
                                     <a href="https://afsha-22.github.io/password-generator" target="_blank">GitHub Page</a><br>
                                     <a href="https://github.com/afsha-22/password-generator" target="_blank">GitHub Reposatory</a>
                                 </div>
                             </div>
-                        </div>
+                        
 
-                        <div class="row">
-                            <div class="col-6 position-relative">
-                                <a href="#top">
-                                    <img class="img-fluid" src="assets/Images/img4.png" alt="Image4"/>
-                                </a>
+                      
+                            <div class="col-lg-6 col-12 position-relative">
+                                <img class="img-fluid w-100" src="assets/Images/img4.png" alt="Image4"/>
                                 <div class="ps-3 position-absolute bottom-0 start-0">
                                     <h4>Day Planner</h3>
                                     <a href="https://afsha-22.github.io/workday-scheduler" target="_blank">GitHub Page</a><br>
                                     <a href="https://github.com/afsha-22/workday-scheduler" target="_blank">GitHub Reposatory</a>
                                 </div>
                             </div>
-                            <div class="col-6 position-relative">
-                                <a href="#top">
-                                    <img class="img-fluid" src="assets/Images/img5.png" alt="Image5"/>
-                                </a>
+                            <div class="col-lg-6 col-12 position-relative">
+                                <img class="img-fluid w-100" src="assets/Images/img5.png" alt="Image5"/>
                                 <div class="ps-3 position-absolute bottom-0 start-0">
                                     <h4>Code Refactor</h3>
                                     <a href="https://afsha-22.github.io/refactor-code" target="_blank">GitHub Page</a><br>
                                     <a href="https://github.com/afsha-22/refactor-code" target="_blank">GitHub Reposatory</a>
                                 </div>
                             </div>
-                        </div>
+                        
                     </div>
 
                 </div>
@@ -108,7 +102,7 @@
             </div>
 
             <div id="contact-me" class="p-2 row">
-                <h2 class="col-3 text-center align-self-center">Contact Me</h2>
+                <h2 class="col-3 text-center align-self-center fs-4">Contact Me</h2>
                 <div class="col-9 p-3 border-start border-3 text-center">
                     <div class="justify-content-center">
                         <a href="tel:61412802976" target="_blank" class="p-2">+61412802976</a>
