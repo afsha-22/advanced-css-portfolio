@@ -1,257 +1,26 @@
-:root {
-  --lightblue: rgb(135, 185, 185);
-  --darkbrown: rgb(54, 47, 47);
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  max-width: 90%;
-  margin: 0 auto;
-}
-
-/* CSS for the Header section of body */
-header {
-  height: 260px;
-  background-color: var(--darkbrown);
-  width: 100%;
-  color: white;
-}
-
-/* Settings to display candidate name on top left corner */
-h1 {
-  display: inline;
-  background-color: var(--lightblue);
-  color: var(--darkbrown);
-  font-size: 40px;
-  padding-left: 30px;
-  padding-right: 5px;
-}
-
-.navigation {
-  display: inline;
-}
-
-/* Next 3 sections: Top Navigation Bar */
-ul {
-  list-style-type: none;
-  float: right;
-  padding: 4px;
-  font-size: 18px;
-}
-
-li {
-  text-decoration: underline;
-  display: inline;
-  padding: 4px;
-  color: var(--lightblue);
-}
-
-a {
-  color: var(--lightblue);
-}
-
-/* Banner div positioning */
-.banner {
-  position: relative;
-  text-align: center;
-}
-
 /* Banner image size */
 .banner1 {
   width: 100%;
   height: 200px;
 }
 
-.avatar {
-  position: absolute;
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  top: 40px;
-  right: 30px;
-}
-
-/* Text appearing on the top banner */
-.subtitle {
-  position: absolute;
-  bottom: 10px;
-  right: 20px;
-  background-color: var(--lightblue);
-  color: var(--darkbrown);
-  font-size: 30px;
-  padding: 8px;
-  margin: 0 4px 5px 0;
-}
-
-/* CSS for the main section of body */
-main {
-  background-color: rgb(232, 243, 243);
-}
-
-/* Making section flex to keep h2 on left and detials on right */
-section {
-  display: flex;
-  padding: 20px;
-}
-
-/* h2 floats on the left size */
-h2 {
-  float: left;
-  margin: 20px;
-  padding: 20px;
-  justify-content: center;
-  width: 25%;
-  text-align: center;
-  color: var(--darkbrown);
-}
-
-/* Making the sub-section flex */
-.sub-sec {
-  display: flex;
-  flex-wrap: wrap;
-  border-left: 6px solid teal;
-  padding: 30px;
-  width: 100%;
-}
-
-/* Size of text in About Me section */
-.sub-sec p {
-  font-size: 18px;
-}
-
-/* Keeping the width of big tile container to 100% */
-.cont {
-  position: relative;
-  display: flex;
-  width: 100%;
-  padding: 0 2px;
-}
-
-/* Keeping the rest 4 tile image container width to half */
-.c2 {
-  width: 50%;
-}
-
-/* Text appearing on the tile image */
-.imgtext {
-  position: absolute;
-  bottom: 10px;
-  background-color: var(--lightblue);
-  color: var(--darkbrown);
-  line-height: 2px;
-  padding: 0 10px;
-  margin-bottom: 5px;
-}
-
-/* First tile image, the bigger size */
-.img1 {
-  height: 300px;
-}
-
-/* 4 tile image of the smaller size */
-main div img {
-  width: 100%;
-  height: 150px;
-  border: 4px solid var(--lightblue);
+/* Setting the default opacity to 0.5 */
+.opacity {
   opacity: 0.5;
 }
 
 /* When hover on the tile image, change the opacity */
-main div img:hover {
+.opacity:hover {
   opacity: 1;
 }
 
-/* Next 3 sections: Bottom Navigation Bar */
-.ulli {
-  padding: 8px;
-  width: 100%;
-  text-align: center;
+.borderLine {
+  border-left: 3px solid lightgrey;
 }
 
-.ulli li {
-  padding: 20px;
-}
-
-.ulli li a {
-  color: var(--darkbrown);
-  font-size: 20px;
-}
-
-/* Responsive Web, when screen size is less than 768px, below properties are applied */
-@media screen and (max-width: 768px) {
-  /* Reduce the header when the screen size reduces beyond certain point */
-  header {
-    height: 295px;
-  }
-
-  /* Update h1 from inline to block and align text to center*/
-  h1 {
-    display: block;
-    text-align: center;
-    margin: 0px;
-    padding: 0px;
-  }
-
-  /* Update the navigation to row */
-  header ul {
-    display: flex;
-    justify-content: center;
-    float: none;
-    margin: 5px;
-  }
-
-  li {
-    display: list-item;
-  }
-
-  /* Update the section to block settings */
-  section {
-    display: block;
-    text-align: center;
-    padding: 0px;
-  }
-
-  .sub-sec {
-    border: 0px;
-    padding: 5px;
-  }
-
-  /* Move the h2 from left to top */
-  h2 {
-    text-decoration: underline;
-    width: 100%;
-    margin: 0px;
-    text-align: center;
-    padding: 20px 0 0 0;
-  }
-
-  /* Update the size of flex-container */
-  .img1 {
-    height: 150px;
-  }
-
-  .ulli li {
-    padding: 5px;
-    margin: 0px;
-  }
-}
-
-/* Make sure the margin is always in place */
-@media screen and (min-width: 992px) {
-  body {
-    max-width: 80%;
-    margin: 0 auto;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .cont,
-  .img1 {
-    width: 100%;
-    height: 150px;
-    margin: 2px;
+@media screen and (max-width: 767px) {
+  .borderLine {
+    border-top: 3px solid lightgrey;
+    border-left: 0px;
   }
 }
