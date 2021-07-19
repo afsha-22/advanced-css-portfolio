@@ -4,35 +4,12 @@
   height: 200px;
 }
 
-/* .avatar {
-  position: absolute;
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  top: 90px;
-  right: 30px;
-} */
-
-/* .subtitle {
-  position: absolute;
-  top: 210px;
-  right: 0px;
-  color: black;
-  font-size: xx-large;
-  padding: 8px;
-  margin: 0 4px 5px 0;
-} */
-
-.imgtext {
-  position: absolute;
-  bottom: 10px;
-  line-height: 2px;
-  padding: 0 10px;
-  margin-bottom: 5px;
+/* Setting the default opacity to 0.5 */
+.opacity {
+  opacity: 0.5;
 }
 
-/* body {
-  width: 90%;
-  margin: 0 auto;
-  max-width: 1200px;
-} */
+/* When hover on the tile image, change the opacity */
+.opacity:hover {
+  opacity: 1;
+}
